@@ -14,7 +14,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<DataBaseContext>(options =>
 {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("insert DB"));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ExampleDDD"));
 
 });
 builder.Services.AddScoped<IPersonRepository, PersonRepository>();
